@@ -24,7 +24,7 @@ print("Product Reviews: ", product_reviews)
 
 
 # Initialize OpenAI LLM
-llm = OpenAI(model="gpt-4o", api_key="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")
+llm = OpenAI(model="gpt-4o", api_key="")
 
 async def retrieve_user_profile(ctx: Context) -> str:
     """Fetches user information."""
@@ -88,7 +88,7 @@ async def features_highlighting(ctx: Context) -> str:
     Product Information: {product_info}
     """
     
-    client = OpenAI_from_openai(api_key="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")
+    client = OpenAI_from_openai(api_key=" ")
     messages = [{"role": "user", "content": prompt_template}]
     
     response = client.chat.completions.create(
@@ -127,7 +127,7 @@ async def sort_reviews(ctx: Context) -> str:
     Product Reviews: {product_reviews}
     """
     
-    client = OpenAI_from_openai(api_key="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")
+    client = OpenAI_from_openai(api_key=" ")
     messages = [{"role": "user", "content": prompt_template}]
     
     response = client.chat.completions.create(
@@ -163,7 +163,7 @@ async def custom_description(ctx: Context) -> str:
     Product Information: {product_info}
     """
     
-    client = OpenAI_from_openai(api_key="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")
+    client = OpenAI_from_openai(api_key=" ")
     messages = [{"role": "user", "content": prompt_template}]
     
     response = client.chat.completions.create(
